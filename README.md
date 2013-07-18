@@ -190,6 +190,9 @@ repo is added.
 
 #### Actions
 
+
+- :TODO: merge (create, add, update) functions to become idempotent.  yum_repository should not blow up if the file is already there.
+- :TODO: do not use proxies to check to see if the key should be loaded.
 - :create: creates a repository file and builds the repository listing
 - :add: runs create action if repository file is missing (default)
 - :remove: removes the repository file
